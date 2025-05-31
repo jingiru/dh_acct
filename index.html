@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>학생 구글 계정 검색</title>
+  <link rel="stylesheet" href="static/styles.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>학생 구글 계정 검색</h1>
+    
+    <form id="search-form">
+      <label for="student-id">학번:</label>
+      <input type="text" id="student-id" name="student-id" required />
+
+      <label for="student-name">이름:</label>
+      <input type="text" id="student-name" name="student-name" required />
+
+      <button type="submit">검색</button>
+    </form>
+
+    <div id="result" class="hidden">
+      <h2>검색 결과</h2>
+      <p><strong>아이디:</strong> <span id="result-id"></span></p>
+      <p><strong>비밀번호:</strong> <span id="result-pw"></span></p>
+    </div>
+  </div>
+
+  <script src="static/script.js"></script>
+</body>
+</html>
